@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetFarm", "PetFarm\PetFarm.csproj", "{53D66389-F7A9-4EB1-85EC-BA2FA2554959}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetFarm.Tests", "PetFarm.Tests\PetFarm.Tests.csproj", "{0CF46D38-283D-490B-8EF9-559FE3E7D4BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53D66389-F7A9-4EB1-85EC-BA2FA2554959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D66389-F7A9-4EB1-85EC-BA2FA2554959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D66389-F7A9-4EB1-85EC-BA2FA2554959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D66389-F7A9-4EB1-85EC-BA2FA2554959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF46D38-283D-490B-8EF9-559FE3E7D4BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF46D38-283D-490B-8EF9-559FE3E7D4BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF46D38-283D-490B-8EF9-559FE3E7D4BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF46D38-283D-490B-8EF9-559FE3E7D4BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {783696DE-33C8-44D7-B0F0-856292E006D5}
+	EndGlobalSection
+EndGlobal

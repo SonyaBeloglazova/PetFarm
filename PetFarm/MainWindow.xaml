@@ -1,0 +1,81 @@
+﻿<Window x:Class="PetFarm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PetFarm"
+        mc:Ignorable="d"
+        Title="Pet Farm" MinHeight="500" MinWidth="800" MaxHeight="500" MaxWidth="800">
+
+    <Window.Background>
+        <ImageBrush ImageSource="/1pic.jpg"/>
+    </Window.Background>
+
+    <Grid x:Name="AppForPet">
+        
+        <Grid x:Name="MainMenu" Visibility="Visible">
+            <Button x:Name="MyPetButton" Content="Мои питомцы" HorizontalAlignment="Left" Margin="148,276,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono" FontSize="22" Background="#FFABDAF4" BorderBrush="#FFABDAF4" Width="200" Height="70" Click="MyPetButton_Click">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#FFABDAF4"/>
+                        <Setter Property="BorderBrush" Value="#FFABDAF4"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}" 
+                                            BorderBrush="{TemplateBinding BorderBrush}"
+                                            BorderThickness="{TemplateBinding BorderThickness}"
+                                            CornerRadius="15"
+                                            Padding="10">
+                                        <ContentPresenter HorizontalAlignment="Center" 
+                                                        VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FF8BC8F0"/>
+                                <Setter Property="BorderBrush" Value="#FF8BC8F0"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button x:Name="AddPetButton" Content="Добавить питомца" HorizontalAlignment="Left" Margin="434,276,0,0" VerticalAlignment="Top" BorderBrush="#FFABDAF4" Background="#FFABDAF4" Width="232" Height="70" FontFamily="Cascadia Mono" FontSize="22" Click="AddPetButton_Click">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#FFABDAF4"/>
+                        <Setter Property="BorderBrush" Value="#FFABDAF4"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}" 
+                                            BorderBrush="{TemplateBinding BorderBrush}"
+                                            BorderThickness="{TemplateBinding BorderThickness}"
+                                            CornerRadius="15"
+                                            Padding="10">
+                                        <ContentPresenter HorizontalAlignment="Center" 
+                                                        VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FF8BC8F0"/>
+                                <Setter Property="BorderBrush" Value="#FF8BC8F0"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Label x:Name="PetFarmLabel" Content="Pet Farm" HorizontalAlignment="Center" Margin="0,26,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono SemiBold" FontSize="48"/>
+        </Grid>
+
+       
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Visibility="Collapsed"/>
+    </Grid>
+</Window>
